@@ -1,0 +1,1 @@
+print("\n".join( map(lambda convertyear:str(convertyear),filter(lambda years:years %100 !=0 or (years%100==0 and years%400==0),map((lambda tuple: (int(tuple[0])*4+int(tuple[1]))),zip(range(0,30),((raw_input("enter year")+" ")*30).split())))[:20])))
